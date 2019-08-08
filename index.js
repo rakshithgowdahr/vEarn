@@ -14,6 +14,10 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.log(err));
 
+app.get("/", (req, res) => {
+  res.status(200).send("mongodb connected");
+});
+
 app.use("/api/register", register);
 app.use("/api/login", login);
 app.use("/api/addmovie", addmovie);
