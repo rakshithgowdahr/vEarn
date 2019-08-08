@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>vEarn</title>
+    <style>
+      body {
+        padding: 20px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="alert alert-info">
+      <p class="lead">
+        vearn is a backend application developed using mongoose, node and
+        express framework. Using this application the user can login, signup,
+        add or watch movies. To see how this application works please install
+        <a href="https://www.getpostman.com/downloads/">postman</a>
+        and call the endpoints to see the results. It has four endpoints.
+      </p>
+    </div>
+    <div class="alert alert-danger alert-dismissable">
+      <p>
+        This app is only for study purpose. More functionalities will be added
+        in the future.This is a sandbox application.
+      </p>
+    </div>
+
+    <div class="jumbotron">
+      <pre>
+ 
+      1. https://vearn.herokuapp.com/api/login 
+        Takes two values email and password,should be mentioned in the body of the request JSON 
+      2. https://vearn.herokuapp.com/api/register 
+      Takes name, email, password, c_password and phone in the body of the request 
+      3. https://vearn.herokuapp.com/api/addmovie 
+      For adding movies title, gnere, rate should be provided in the body of the request 
+      4. https://vearn.herokuapp.com/api/getmovie?gnere=all 
+      getmovie takes query string for getting movies ex:gnere=all, gnere=action, gnere=comedy,
+      gnere=thriller.
+    </pre
+      >
+    </div>
+    <blockquote class=" blockquote">
+      <p>
+        For registering user open postman navigate URL to
+        https://vearn.herokuapp.com/api/register. In the body of the request
+        select raw->JSON(application/json)
+      </p>
+    </blockquote>
+    <pre>
+      {
+          "name":"yourname",
+          "email":"youremail@xyz.com",
+          "password":"password",
+          "c_password":"password",
+          "phone":"123456"
+
+      }
+      </pre
+    >
+  </body>
+</html>

@@ -15,7 +15,7 @@ mongoose
   .catch(err => console.log(err));
 
 app.get("/", (req, res) => {
-  res.status(200).send("mongodb connected");
+  res.sendfile("index.html", { root: __dirname });
 });
 
 app.use("/api/register", register);
