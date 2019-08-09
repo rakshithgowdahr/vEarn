@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const jwt = require("jsonwebtoken");
 const Movie = require("../models/movieModel");
 
 router.get("", async (req, res) => {

@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const config = require("config");
 const app = express();
 app.use(express.json());
 const register = require("./route/register");
@@ -8,6 +9,11 @@ const addmovie = require("./route/addmovie");
 const getmovie = require("./route/getmovie");
 
 const db = require("./config/keys").mongoURI;
+
+// if (!config.get("jwtPrivateKeys")) {
+//   console.log("FATAL ERROR: jwtPrivateKey not defined");
+//   process.exit(1);
+// }
 
 mongoose
   .connect(db, { useNewUrlParser: true })

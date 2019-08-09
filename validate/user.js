@@ -9,11 +9,12 @@ function validateUser(data) {
     email: Joi.string()
       .email()
       .required(),
-    password: Joi.string().regex(/^[a-zA-Z0-9]{3,30}$/),
+    password: Joi.string()
+      .regex(/^[a-zA-Z0-9]{3,30}$/)
+      .required(),
     c_password: Joi.any()
       .valid(Joi.ref("password"))
-      .required()
-      .options({ language: { any: { allowOnly: "must match password" } } }),
+      .required(),
     phone: Joi.string()
       .min(6)
       .max(10)
