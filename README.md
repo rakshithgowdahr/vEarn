@@ -1,7 +1,13 @@
 # vEarn
 vearn is a backend application developed using mongoose, node and express framework. Using this application the user can login, signup, add or watch movies. To see how this application works please install postman and call the endpoints to see the results. It has four endpoints.
 
-This app is only for study purpose. More functionalities will be added in the future.This is a sandbox application.
+This app only shows the working model because this is a sandbox application. More functionalities will be added in the future.
+
+#installation
+1. download the zip file or clone download and extract
+2. run the command npm i in the command prompt
+3. if everything goes well you can start the application by running npm start/ node index.js command.
+4. For best view this application use Postman for sending the requests to https://vearn.herokuapp.com/
 
  
       1. https://vearn.herokuapp.com/api/login 
